@@ -42,6 +42,8 @@
 \renewcommand{\BVOL}{svezak}
 %%%%%
 
+\setcounter{tocdepth}{1}
+
 %%%%% beamer tema
 \usetheme{CambridgeUS}
 
@@ -96,7 +98,7 @@
 \resetcounteronoverlays{saveenumi}
 %%%%%
 
-%%%%5 fontsize za bibliografiju
+%%%% fontsize za bibliografiju
 \renewcommand*{\bibfont}{\scriptsize}
 %%%%%
 
@@ -107,6 +109,9 @@
     \citep{#1}
     \egroup}
 %%%%%
+
+%%%% listings
+\lstset{basicstyle=\footnotesize\ttfamily}
 
 \begin{document}
 
@@ -303,8 +308,105 @@
 
 \begin{noheadline}
     \begin{frame}
+        \frametitle{Praćenje promjena}
+
+        \begin{itemize}
+            \setlength{\itemsep}{2em}
+
+            \item olakšava praćenje istraživačkog procesa
+
+            \begin{itemize}
+                \item kad je nastala promjena u nekom dokumentu
+
+                \item vraćanje na starije verzije
+            \end{itemize}
+
+            \pause
+
+            \item olakšava reproduciranje postupaka koji su doveli do nekog
+                ishoda (npr. istraživački rad, izvještaj)
+
+            \pause
+
+            \item specijalizirani alati (\texttt{git}) i servisi (GitHub) ili
+                ručno
+
+        \end{itemize}
     \end{frame}
 \end{noheadline}
+
+\subsection{Ručno praćenje promjena}
+
+\begin{frame}[fragile]
+    \begin{itemize}
+        \setlength{\itemsep}{2em}
+
+        \item u folder projekta dodati \texttt{CHANGELOG.txt} dokument
+
+        \begin{itemize}
+            \item bilješke s izmjenama učinjenima na datotekama projekta
+            \item svaki unos ima vremensku oznaku, najnoviji unosi na početku
+        \end{itemize}
+
+        \pause
+
+        \begin{lstlisting}
+    #### [05-11-2020_12-00]
+    - prosirio primjer za rucno pracenje izmjena
+    - dodao slike
+    #### [05-11-2020_11-15]
+    - dodao primjer za rucno pracenje izmjena
+        \end{lstlisting}
+
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+    \begin{itemize}
+        \setlength{\itemsep}{2em}
+
+        \item napravite kopiju projekta kad god učinite neku značajnu promjenu
+
+        \pause
+
+        \item kopiju pohranite u folder unutar projektnog foldera
+
+        \item kao ime foldera s kopijom stavite datum kad je kopija napravljena
+
+        \pause
+
+        \begin{lstlisting}
+    projekt/
+    |-- trenutna
+    |-- 05-11-2020
+    |-- 04-11-2020
+        \end{lstlisting}
+
+        \pause
+
+        \item memorija je jeftina, podaci su skupi!
+    \end{itemize}
+\end{frame}
+
+\subsection{Savjeti}
+
+\begin{frame}
+    \begin{itemize}
+        \setlength{\itemsep}{2em}
+
+        \item male promjene --- skupina izmjena koje biste u nekom trenu
+            mogli poželjeti poništiti
+
+        \pause
+
+        \item često dijelite i usklađujte izmjene
+
+        \pause
+
+        \item pazite na to da samo jedna osoba u danom trenutku radi na nekoj
+            datoteci!
+    \end{itemize}
+\end{frame}
 
 \section{Suradnja}
 
