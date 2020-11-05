@@ -9,6 +9,7 @@
 \usepackage[natbibapa]{apacite}
 \usepackage{url}
 \usepackage{fontawesome}
+\usepackage{listings}
 
 \definecolor{twitterBlue}{HTML}{1DA1F2}
 
@@ -21,7 +22,7 @@
     \textcolor{twitterBlue}{\faTwitter} @dvlasicek}
 
 \titlegraphic{\includegraphics[scale=.30, keepaspectratio=true]%
-    {../images/walrus-folder.jpg}}
+    {images/walrus-and-folder.pdf}}
 
 \date[]{}
 %%%%%
@@ -123,6 +124,10 @@
 \begin{noheadline}
     \begin{frame}
         \sectionpage
+
+        \begin{center}
+            \includegraphics[scale=.35]{images/walrus-folder-attack.pdf}
+        \end{center}
     \end{frame}
 \end{noheadline}
 
@@ -151,6 +156,10 @@
 \begin{noheadline}
     \begin{frame}
         \sectionpage
+
+        \begin{center}
+            \includegraphics[scale=.15]{images/organizacija-datoteka.png}
+        \end{center}
     \end{frame}
 \end{noheadline}
 
@@ -158,32 +167,43 @@
     \begin{frame}
         \frametitle{Organizacija datoteka}
 
-        \begin{itemize}
-            \setlength{\itemsep}{2em}
-
-            \item svaki projekt treba dobiti vlastiti folder
+        \begin{columns}
+            \column{.65\linewidth}
 
             \begin{itemize}
-                \item kako definirati što je \textit{projekt}
-            \end{itemize}
+                \setlength{\itemsep}{2em}
 
+                \item svaki projekt treba dobiti vlastiti folder
+
+                \begin{itemize}
+                    \item kako definirati što je \textit{projekt}
+                \end{itemize}
+
+                \pause
+
+                \item napraviti posebne foldere za različite tipove datoteka
+
+                \begin{itemize}
+                    \item podaci (\texttt{data})
+
+                    \item tekstualne datoteke (rukopisi, dokumentacije)
+                        (\texttt{doc})
+
+                    \item datoteke vezane uz analize (\texttt{stats})
+                \end{itemize}
+
+                \pause
+
+                \item imena datoteka trebaju odražavati njihovu funkciju
+            \end{itemize}
+            
             \pause
 
-            \item napraviti posebne foldere za različite tipove datoteka
+            \column{.35\linewidth}
 
-            \begin{itemize}
-                \item podaci (\texttt{data})
-
-                \item tekstualne datoteke (rukopisi, dokumentacije)
-                    (\texttt{doc})
-
-                \item datoteke vezane uz analize (\texttt{stats})
-            \end{itemize}
-
-            \pause
-
-            \item imena datoteka trebaju odražavati njihovu funkciju
-        \end{itemize}
+            \hspace*{2em}
+            \includegraphics[scale=.25]{images/tree-light.png}
+        \end{columns}
     \end{frame}
 \end{noheadline}
 
@@ -192,6 +212,10 @@
 \begin{noheadline}
     \begin{frame}
         \sectionpage
+
+        \begin{center}
+            \includegraphics[scale=.05]{images/peasant-folder.pdf}
+        \end{center}
     \end{frame}
 \end{noheadline}
 
@@ -244,6 +268,8 @@
             \item ne ostavljajte prazne ćelije
         \end{itemize}
 
+        \pause
+
         \item bilježite sve korake procesiranja skupa podataka
 
         \pause
@@ -268,6 +294,10 @@
 \begin{noheadline}
     \begin{frame}
         \sectionpage
+
+        \begin{center}
+            \includegraphics[scale=.20]{images/phdcomics-filenaming.png}
+        \end{center}
     \end{frame}
 \end{noheadline}
 
@@ -299,6 +329,14 @@
 
 \begin{noheadline}
     \begin{frame}
+    \end{frame}
+\end{noheadline}
+
+\section{Dodatni materijali}
+
+\begin{noheadline}
+    \begin{frame}
+        \frametitle{Dodatni materijali}
     \end{frame}
 \end{noheadline}
 
