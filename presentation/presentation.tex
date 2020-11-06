@@ -14,7 +14,7 @@
 \definecolor{twitterBlue}{HTML}{1DA1F2}
 
 %%%%% titlepage
-\title[]{Kako organizirati istraživački projekt?}
+\title[]{Kako organizirati podatke u istraživačkom projektu?}
 
 \author[]{\fontsize{8}{10}\selectfont Denis Vlašiček\\[.15em]
     Odsjek za psihologiju FFZG | CROSSDA\\[.15em]
@@ -156,6 +156,35 @@
     \end{frame}
 \end{noheadline}
 
+\begin{frame}
+    \begin{itemize}
+        \item Ali oduzima puno vremena\ldots
+
+        \pause
+
+        \begin{itemize}
+
+            \vspace*{.7em}
+
+            \setlength{\itemsep}{2em}
+
+            \item vraćanje projektu nakon bavljenja nečim drugim
+
+            \pause
+
+            \item automatizacija (dijela) procesa
+
+            \pause
+
+            \item ponovna uporaba materijala
+
+            \pause
+
+            \item lakše je reproducirati nalaze
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
 \section{Organizacija datoteka}
 
 \begin{noheadline}
@@ -290,7 +319,7 @@
 
         \pause
 
-        \item arhivirajte podatke u uglednom repozitoriju (CROSSDA, Zenodo)
+        \item napravite dokumentaciju za podatke (\textit{metapodatke})
     \end{itemize}
 \end{frame}
 
@@ -380,13 +409,9 @@
         \begin{lstlisting}
     projekt/
     |-- trenutna
-    |-- 05-11-2020
-    |-- 04-11-2020
+    |-- 2020-11-05
+    |-- 2020-11-04
         \end{lstlisting}
-
-        \pause
-
-        \item memorija je jeftina, podaci su skupi!
     \end{itemize}
 \end{frame}
 
@@ -396,17 +421,42 @@
     \begin{itemize}
         \setlength{\itemsep}{2em}
 
+        \item memorija je jeftina, podaci su skupi!
+
+        \pause
+
         \item male promjene --- skupina izmjena koje biste u nekom trenu
             mogli poželjeti poništiti
 
         \pause
 
-        \item često dijelite i usklađujte izmjene
-
-        \pause
-
         \item pazite na to da samo jedna osoba u danom trenutku radi na nekoj
             datoteci!
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \begin{itemize}
+        \item Dropbox i Google Drive omogućavaju pohranu različitih verzija
+            datoteka
+            
+        \vspace{1em}
+            
+        \begin{center}
+            \includegraphics[scale=.25]{images/drive-vcs.png}
+        \end{center}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \begin{itemize}
+        \item Google Docs omogućava pohranu različitih verzija tekstova
+            
+        \vspace{1em}
+
+        \begin{center}
+            \includegraphics[scale=.25]{images/docs-vcs.png}
+        \end{center}
     \end{itemize}
 \end{frame}
 
