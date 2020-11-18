@@ -64,6 +64,16 @@
     \thesection) \insertsection
     \end{center}}
 
+% \setbeamertemplate{footline}{\begin{center}
+%     \insertframenumber\ / \inserttotalframenumber
+%     \end{center}}
+
+\setbeamertemplate{footline}{%
+    \hspace*{\fill}%%
+    \insertframenumber\,/\,\inserttotalframenumber%
+    \hspace*{\fill}%
+    }
+
 \setbeameroption{hide notes}
 %\setbeameroption{show only notes}
 %\usepackage{pgfpages}
