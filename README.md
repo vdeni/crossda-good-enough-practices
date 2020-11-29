@@ -1,3 +1,7 @@
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+
+## Opće informacije
+
 Kod za izlaganje "Kako organizirati podatke u istraživačkom projektu?"
 Prezentacija je rađena koristeći LaTeX-ovu `beamer` klasu. Sadržaj se većinom
 temelji na radu Wilson, G., Bryan, J., Cranston, K., Kitzes, J., Nederbragt,
@@ -8,8 +12,12 @@ Dio informacija i inspiracije je preuzet iz CESSDA Training Team (2020).
 *CESSDA Data Management Expert Guide*. Bergen, Norway: CESSDA ERIC. doi:
 `10.5281/zenodo.3820472`.
 
+## Struktura direktorija
+
 Folder `presentation` sadrži `.tex` dokument korišten za stvaranje
 prezentacije. `presentation/images` sadrži slike korištene u prezentaciji.
+
+## Verzije softvera
 
 ```
 pdfTeX 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux)
