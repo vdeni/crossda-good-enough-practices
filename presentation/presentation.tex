@@ -7,7 +7,7 @@
 \usepackage{microtype}
 \usepackage{csquotes}
 \usepackage[natbibapa]{apacite}
-\usepackage{url}
+\usepackage[hyphens]{url}
 \usepackage{fontawesome}
 \usepackage{listings}
 
@@ -64,11 +64,11 @@
     \thesection) \insertsection
     \end{center}}
 
-\setbeamertemplate{footline}{%
-    \hspace*{\fill}%%
-    \insertframenumber\,/\,\inserttotalframenumber%
-    \hspace*{\fill}%
-    }
+% \setbeamertemplate{footline}{%
+%     \hspace*{1em}%%
+%     \insertframenumber\,/\,\inserttotalframenumber%
+%     \hspace*{\fill}%
+%     }
 
 \setbeameroption{hide notes}
 %\setbeameroption{show only notes}
@@ -445,7 +445,7 @@
 
 \begin{frame}
     \begin{itemize}
-        \item Dropbox i Google Drive omogućavaju pohranu različitih verzija
+        \item Puh, Dropbox i Google Drive omogućavaju pohranu različitih verzija
             datoteka
             
         \vspace{1em}
@@ -466,6 +466,32 @@
             \includegraphics[scale=.30]{images/docs-vcs.png}
         \end{center}
     \end{itemize}
+\end{frame}
+
+\begin{noheadline}
+    \begin{frame}
+    \fontfamily{mak}
+
+    \fontsize{50}{52}\selectfont
+    \centering
+    ?
+    \end{frame}
+\end{noheadline}
+
+\begin{frame}
+    \frametitle{?}
+
+    \begin{itemize}
+        \setlength{\itemsep}{2em}
+
+        \item Kako organizirate svoje projekte?
+
+        \item Kako dijelite materijale sa suradnicima i kolegama?
+
+        \item Gdje pohranjujete podatke za vrijeme trajanja projekta?
+
+    \end{itemize}
+
 \end{frame}
 
 \section{Dodatni materijali i reference}
@@ -493,6 +519,9 @@
             \item dodatna inspiracija iz CESSDA Training Team (2020). \textit{CESSDA
                 Data Management Expert Guide}. Bergen, Norway: CESSDA ERIC. doi:
                 \url{10.5281/zenodo.3820472}
+
+            \item sustav za pohranu podataka \texttt{puh} (Srce):
+                \url{https://www.srce.unizg.hr/puh}
             
         \end{itemize}
     \end{frame}
