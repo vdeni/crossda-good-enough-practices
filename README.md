@@ -7,11 +7,11 @@ Prezentacija je rađena koristeći LaTeX-ovu `beamer` klasu. Sadržaj se većino
 temelji na radu Wilson, G., Bryan, J., Cranston, K., Kitzes, J., Nederbragt,
 L., i Teal, T. K. (2017). Good enough practices in scientific computing. *PLoS
 computational biology, 13*(6), e1005510. doi:
-`https://doi.org/10.1371/journal.pcbi.1005510`
+https://doi.org/10.1371/journal.pcbi.1005510
 
 Dio informacija i inspiracije je preuzet iz CESSDA Training Team (2020).
 *CESSDA Data Management Expert Guide*. Bergen, Norway: CESSDA ERIC. doi:
-`https://doi.org/10.5281/zenodo.3820472`.
+https://doi.org/10.5281/zenodo.3820472.
 
 ## Struktura direktorija
 
