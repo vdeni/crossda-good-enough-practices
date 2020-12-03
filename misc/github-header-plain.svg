@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="339.98959mm"
+   height="170.65627mm"
+   viewBox="0 0 339.98955 170.65626"
+   version="1.1"
+   id="svg62">
+  <defs
+     id="defs56">
+    <rect
+       x="59.933151"
+       y="92.139188"
+       width="190.29872"
+       height="16.792324"
+       id="rect24" />
+    <rect
+       x="52.916668"
+       y="132.29167"
+       width="79.694595"
+       height="19.251003"
+       id="rect80" />
+    <rect
+       x="74.083336"
+       y="74.083336"
+       width="116.41667"
+       height="47.625"
+       id="rect68" />
+  </defs>
+  <metadata
+     id="metadata59">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <text
+     xml:space="preserve"
+     id="text66"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;line-height:1.25;font-family:'Latin Modern Sans Quotation';-inkscape-font-specification:'Latin Modern Sans Quotation, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect68);fill:#000000;fill-opacity:1;stroke:none;"
+     x="40.656933"
+     y="0"
+     transform="matrix(3.0295028,0,0,3.0295028,-174.23495,-176.46615)"><tspan
+       x="74.083984"
+       y="87.997529"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:'3270Medium Nerd Font';-inkscape-font-specification:'3270Medium Nerd Font, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">&gt;</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle">CR</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#d40000">O</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle">SSDA</tspan></tspan></text>
+  <text
+     xml:space="preserve"
+     id="text22"
+     style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect24);fill:#000000;fill-opacity:1;stroke:none;"
+     transform="matrix(1.3016531,0,0,1.2636484,-4.4343063,-21.319904)"
+     x="120.30752"
+     y="0"><tspan
+       x="59.933594"
+       y="101.92822"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:'3270Medium Nerd Font';-inkscape-font-specification:'3270Medium Nerd Font, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Organizacija projekata</tspan></tspan></text>
+</svg>

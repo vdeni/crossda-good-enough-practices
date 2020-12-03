@@ -18,6 +18,11 @@ https://doi.org/10.5281/zenodo.3820472.
 Folder `presentation` sadrži `.tex` dokument korišten za stvaranje
 prezentacije. `presentation/images` sadrži slike korištene u prezentaciji.
 
+`misc` sadrži datoteke za GitHub header (Social Preview):
+- `github-header.png`
+- `github-header-plain.svg` je "plain SVG" verzija datoteka, prema Inkscapeu
+- `github-header-inkscape.svg` je "Inkscape SVG" verzija datoteka, prema Inkscapeu
+
 ## Verzije softvera
 
 ```
