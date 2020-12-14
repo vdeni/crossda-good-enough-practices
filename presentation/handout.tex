@@ -1,0 +1,532 @@
+\documentclass[handout,aspectratio=169]{beamer}
+
+\usepackage[croatian]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{csquotes}
+\usepackage[natbibapa]{apacite}
+\usepackage{fontawesome}
+\usepackage{listings}
+
+\definecolor{twitterBlue}{HTML}{1DA1F2}
+
+%%%%% titlepage
+\title[]{Kako organizirati podatke u istraživačkom projektu?}
+
+\author[]{\fontsize{8}{10}\selectfont Denis Vlašiček\\[.15em]
+    Odsjek za psihologiju FFZG | CROSSDA\\[.15em]
+    \faEnvelope\ dvlasice@ffzg.hr\\[.15em]
+    \textcolor{twitterBlue}{\faTwitter} @dvlasicek\\[.15em]
+    \faGithub\ vdeni}
+
+\titlegraphic{\vspace*{-2em}\includegraphics[scale=.30, keepaspectratio=true]%
+    {images/walrus-and-folder.pdf}}
+
+\date[]{}
+%%%%%
+
+%%%%% prilagodba referenci na hrvatski
+\renewcommand{\BCBT}{}
+\renewcommand{\BCBL}{}%  comma before last author when no. of authors > 2
+\renewcommand{\BOthers}[1]{i sur.\hbox{}}% ``and others''
+\renewcommand{\BBAA}{i}
+\renewcommand{\BBAB}{i}
+\renewcommand{\BIn}{U:}
+\renewcommand{\BED}{Ur.\hbox{}}
+\renewcommand{\BEDS}{Ur.\hbox{}}
+\renewcommand{\BPGS}{str.\hbox{}}
+\renewcommand{\BRetrievedFrom}{Preuzeto s:\hbox{}}
+\renewcommand{\BEd}{izdanje}
+\renewcommand{\BVOL}{svezak}
+%%%%%
+
+\setcounter{tocdepth}{1}
+
+%%%%% beamer tema
+\usetheme{CambridgeUS}
+
+\usecolortheme{dove}
+
+\setbeamertemplate{itemize items}[default]
+
+\setbeamertemplate{itemize item}{\textbullet}
+\setbeamertemplate{itemize subitem}{\(\triangleright\)}
+
+\setbeamertemplate{section in toc}%
+    {\inserttocsectionnumber) \inserttocsection}
+
+\setbeamertemplate{section page}%
+    {\Large
+    \begin{center}
+    \thesection) \insertsection
+    \end{center}}
+
+% \setbeamertemplate{footline}{%
+%     \hspace*{1em}%%
+%     \insertframenumber\,/\,\inserttotalframenumber%
+%     \hspace*{\fill}%
+%     }
+
+\setbeameroption{hide notes}
+%\setbeameroption{show only notes}
+%\usepackage{pgfpages}
+%\setbeameroption{show notes on second screen=left}
+
+%%%%%
+
+%%%%% serif font kao default
+\usefonttheme{serif}
+%%%%%
+
+\setbeamertemplate{navigation symbols}{}
+
+\makeatletter
+\newenvironment{noheadline}{
+    \setbeamertemplate{headline}{}
+}{}
+\makeatother
+%%%%%
+
+%%%%% nastavljanje enumerate
+\newcounter{saveenumi}
+\newcommand{\seti}{\setcounter{saveenumi}{\value{enumi}}}
+\newcommand{\conti}{\setcounter{enumi}{\value{saveenumi}}}
+
+\resetcounteronoverlays{saveenumi}
+%%%%%
+
+%%%% fontsize za bibliografiju
+\renewcommand*{\bibfont}{\scriptsize}
+%%%%%
+
+%%%%% tiny citep
+\newcommand{\tinycitep}[1]{%
+    \bgroup
+    \scriptsize
+    \citep{#1}
+    \egroup}
+%%%%%
+
+%%%% listings
+\lstset{basicstyle=\footnotesize\ttfamily}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}
+    \tableofcontents
+\end{frame}
+
+\section{Uvod}
+
+\begin{noheadline}
+    \begin{frame}
+        \sectionpage
+
+        \begin{center}
+            \includegraphics[scale=.35]{images/walrus-folder-attack.pdf}
+
+        \end{center}
+    \end{frame}
+\end{noheadline}
+
+\begin{noheadline}
+    \begin{frame}
+        \frametitle{Uvod}
+
+        \begin{itemize}
+            \setlength{\itemsep}{2em}
+
+            \item Što znači organizirati podatke u istraživačkom projektu?
+
+            \pause
+
+            \item Zbog čega treba razmišljati o svemu tome?
+
+            \pause
+
+            \item Kakve veze to ima s \textit{istraživanjima}?
+
+        \end{itemize}
+    \end{frame}
+\end{noheadline}
+
+\begin{frame}
+    \begin{itemize}
+        \item Ali oduzima puno vremena\ldots
+
+        \pause
+
+        \begin{itemize}
+
+            \vspace*{.7em}
+
+            \setlength{\itemsep}{2em}
+
+            \item vraćanje projektu nakon bavljenja nečim drugim
+
+            \pause
+
+            \item automatizacija (dijela) procesa
+
+            \pause
+
+            \item ponovna uporaba materijala
+
+            \pause
+
+            \item lakše je reproducirati nalaze
+
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\section{Organizacija datoteka}
+
+\begin{noheadline}
+    \begin{frame}
+        \sectionpage
+
+        \begin{center}
+            \includegraphics[scale=.15]{images/organizacija-datoteka.png}
+
+        \end{center}
+    \end{frame}
+\end{noheadline}
+
+\begin{noheadline}
+    \begin{frame}
+        \frametitle{Organizacija datoteka}
+
+        \begin{columns}
+            \column{.65\linewidth}
+
+            \begin{itemize}
+                \setlength{\itemsep}{2em}
+
+                \item svaki projekt treba dobiti vlastiti folder
+
+                \begin{itemize}
+                    \item kako definirati što je \textit{projekt}
+                \end{itemize}
+
+                \pause
+
+                \item napraviti posebne foldere za različite tipove datoteka
+
+                \begin{itemize}
+                    \item podaci (\texttt{data})
+
+                    \item tekstualne datoteke (rukopisi, dokumentacije)
+                        (\texttt{doc})
+
+                    \item datoteke vezane uz analize (\texttt{stats})
+
+                \end{itemize}
+
+                \pause
+
+                \item imena datoteka trebaju odražavati njihovu funkciju
+
+            \end{itemize}
+            
+            \pause
+
+            \column{.35\linewidth}
+
+            \hspace*{2em}
+            \includegraphics[scale=.28]{images/tree-light.png}
+        \end{columns}
+    \end{frame}
+\end{noheadline}
+
+\section{Upravljanje istraživačkim podacima}
+
+\begin{noheadline}
+    \begin{frame}
+        \sectionpage
+
+        \begin{center}
+            \includegraphics[scale=.05]{images/peasant-folder.pdf}
+        \end{center}
+    \end{frame}
+\end{noheadline}
+
+\begin{noheadline}
+    \begin{frame}
+        \frametitle{Upravljanje istraživačkim podacima}
+
+        \begin{itemize}
+            \setlength{\itemsep}{2em}
+
+            \item spremite sirove podatke!
+
+            \begin{itemize}
+                \item pohranite ih na sigurno mjesto
+
+                \item onemogućite izmjenu podataka (read-only)
+
+                \item nemojte ih zamijeniti pročišćenim podacima
+
+            \end{itemize}
+
+            \pause
+
+            \item napravite sigurnosne kopije, i pohranite ih na nekoliko
+                različitih mjesta
+
+            \pause
+
+            \item ako možete, koristite i otvorene formate za pohranu
+
+            \begin{itemize}
+                \item primjerice \texttt{CSV} (comma separated values) uz
+                    \texttt{SAV}
+            \end{itemize}
+        \end{itemize}
+    \end{frame}
+\end{noheadline}
+
+\begin{frame}
+    \begin{itemize}
+        \setlength{\itemsep}{2em}
+
+        \item napravite uredne (\textit{tidy}) podatke
+
+        \begin{itemize}
+            \item svaki stupac je jedna varijabla (ne spajati dvije vrijednosti
+                u isti stupac)
+
+            \item svaki red je jedno opažanje/jedinica analize
+
+            \item ne ostavljajte prazne ćelije
+
+        \end{itemize}
+
+        \pause
+
+        \includegraphics[scale=.28]{images/messy-politics.png}
+
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \begin{itemize}
+        \setlength{\itemsep}{2em}
+
+        \item bilježite sve korake procesiranja skupa podataka
+
+        \pause
+
+        \begin{itemize}
+            \item procesiranje podataka je jedan od ključnih koraka u analizi
+
+            \pause
+
+            \item mora biti moguće pratiti postupak od sirovih podataka do
+                podataka korištenih u obradama
+
+        \end{itemize}
+
+        \pause
+
+        \item napravite dokumentaciju za podatke (\textit{metapodatke})
+
+    \end{itemize}
+\end{frame}
+
+\section{Praćenje promjena}
+
+\begin{noheadline}
+    \begin{frame}
+        \sectionpage
+
+        \begin{center}
+            \includegraphics[scale=.20]{images/phdcomics-filenaming.png}
+        \end{center}
+    \end{frame}
+\end{noheadline}
+
+\begin{noheadline}
+    \begin{frame}
+        \frametitle{Praćenje promjena}
+
+        \begin{itemize}
+            \setlength{\itemsep}{2em}
+
+            \item olakšava praćenje istraživačkog procesa
+
+            \begin{itemize}
+                \item kad je nastala promjena u nekom dokumentu
+
+                \item vraćanje na starije verzije
+
+            \end{itemize}
+
+            \pause
+
+            \item olakšava reproduciranje postupaka koji su doveli do nekog
+                ishoda (npr. istraživački rad, izvještaj)
+
+            \pause
+
+            \item specijalizirani alati (\texttt{git}) i servisi (GitHub) ili
+                ručno
+
+        \end{itemize}
+    \end{frame}
+\end{noheadline}
+
+\subsection{Ručno praćenje promjena}
+
+\begin{frame}[fragile]
+    \begin{itemize}
+        \setlength{\itemsep}{2em}
+
+        \item u folder projekta dodati \texttt{CHANGELOG.txt} dokument
+
+        \begin{itemize}
+            \item bilješke s izmjenama učinjenima na datotekama projekta
+
+            \item svaki unos ima vremensku oznaku, najnoviji unosi na početku
+
+        \end{itemize}
+
+        \pause
+
+        \vspace*{3em}
+
+        \begin{lstlisting}
+    #### [2020-11-05_12-00]
+    - prosirio primjer za rucno pracenje izmjena
+    - dodao slike
+    #### [2020-11-05_11-15]
+    - dodao primjer za rucno pracenje izmjena
+        \end{lstlisting}
+
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+    \begin{itemize}
+        \setlength{\itemsep}{2em}
+
+        \item napravite kopiju projekta kad god učinite neku značajnu promjenu
+
+        \pause
+
+        \item kopiju pohranite u folder unutar projektnog foldera
+
+        \item kao ime foldera s kopijom stavite datum kad je kopija napravljena
+
+        \pause
+
+        \begin{lstlisting}
+    projekt/
+    |-- trenutna
+    |-- 2020-11-05
+    |-- 2020-11-04
+        \end{lstlisting}
+
+        \pause
+
+        \item mediji za pohranu su jeftini, podaci su skupi!
+
+    \end{itemize}
+\end{frame}
+
+\subsection{Savjeti}
+
+\begin{frame}
+    \begin{itemize}
+        \item Puh, Dropbox i Google Drive omogućavaju pohranu različitih verzija
+            datoteka
+            
+        \vspace{1em}
+            
+        \begin{center}
+            \includegraphics[scale=.28]{images/drive-vcs.png}
+        \end{center}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \begin{itemize}
+        \item Google Docs omogućava pohranu različitih verzija tekstova
+            
+        \vspace{1em}
+
+        \begin{center}
+            \includegraphics[scale=.30]{images/docs-vcs.png}
+        \end{center}
+    \end{itemize}
+\end{frame}
+
+\begin{noheadline}
+    \begin{frame}
+    \fontfamily{mak}
+
+    \fontsize{50}{52}\selectfont
+    \centering
+    ?
+    \end{frame}
+\end{noheadline}
+
+\begin{frame}
+    \frametitle{?}
+
+    \begin{itemize}
+        \setlength{\itemsep}{2em}
+
+        \item Kako organizirate svoje projekte?
+
+        \item Kako dijelite materijale sa suradnicima i kolegama?
+
+        \item Gdje pohranjujete podatke za vrijeme trajanja projekta?
+
+    \end{itemize}
+
+\end{frame}
+
+\section{Dodatni materijali i reference}
+
+\begin{noheadline}
+    \begin{frame}
+        \frametitle{Dodatni materijali i reference}
+
+        \fontsize{10}{12}\selectfont
+
+        \begin{itemize}
+            \setlength{\itemsep}{1em}
+            
+            \item morževi preuzeti iz Kastelein, R. A., Zweypfenning, R. C. V.
+                J., Spekreijse, H., Dubbeldam, J. L., i Born, E. W. (1993). The
+                Anatomy of the walrus head (Odobenus rosmarus). Part 3: The eyes
+                and their function in Walrus ecology. \textit{Aquatic mammals, 19},
+                61-61.
+
+            \item sadržaj temeljen na Wilson, G., Bryan, J., Cranston, K.,
+                Kitzes, J., Nederbragt, L., i Teal, T. K. (2017). Good enough
+                practices in scientific computing. \textit{PLoS computational biology,
+                13}(6), e1005510. doi: \url{https://doi.org/10.1371/journal.pcbi.1005510}
+
+            \item dodatna inspiracija iz CESSDA Training Team (2020). \textit{CESSDA
+                Data Management Expert Guide}. Bergen, Norway: CESSDA ERIC. doi:
+                \url{https://doi.org/10.5281/zenodo.3820472}
+
+            \item sustav za pohranu podataka \texttt{puh} (Srce):
+                \url{https://www.srce.unizg.hr/puh}
+
+            \item kako imenovati datoteke:
+                \url{https://speakerdeck.com/jennybc/how-to-name-files}
+            
+        \end{itemize}
+    \end{frame}
+\end{noheadline}
+
+\end{document}

@@ -32,7 +32,7 @@
      showgrid="false"
      showborder="true"
      inkscape:showpageshadow="false"
-     inkscape:zoom="0.69257019"
+     inkscape:zoom="0.98474824"
      inkscape:cx="910.47775"
      inkscape:cy="447.52581"
      inkscape:window-x="1963"
@@ -40,7 +40,7 @@
      inkscape:window-maximized="0"
      inkscape:current-layer="svg62"
      inkscape:document-rotation="0"
-     showguides="false"
+     showguides="true"
      inkscape:guide-bbox="true"
      inkscape:snap-grids="false"
      inkscape:snap-bbox="true"
@@ -153,5 +153,5 @@
        x="59.933594"
        y="101.92822"><tspan
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:'3270Medium Nerd Font';-inkscape-font-specification:'3270Medium Nerd Font, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</tspan><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Organizacija projekata</tspan></tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Organizacija podataka</tspan></tspan></text>
 </svg>
